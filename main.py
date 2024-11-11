@@ -5,7 +5,8 @@ class Asiento:
         self.precio = precio
         self.registro = registro        
     
-    def cambiarColor(self, nuevoColor, coloresPosibles):
+    def cambiarColor(self, nuevoColor):
+        coloresPosibles = ["rojo", "verde", "amarillo", "blanco", "negro"]
         for i in coloresPosibles:
             if nuevoColor.lower() == i:
                 self.color = nuevoColor
