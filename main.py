@@ -7,13 +7,13 @@ class Asiento:
     
     def cambiarColor(self, nuevoColor, coloresPosibles):
         for i in coloresPosibles:
-            if nuevoColor == i:
+            if nuevoColor.lower() == i:
                 self.color = nuevoColor
 
 class Auto:
     cantidadCreados = 0
     
-    def __init__(self, modelo, precio, Asientos, marca, motor, registro):
+    def __init__(self, modelo, precio, Asientos, marca, Motor, registro):
          self.modelo = modelo
          self.precio = precio
          self.asientos = Asientos
