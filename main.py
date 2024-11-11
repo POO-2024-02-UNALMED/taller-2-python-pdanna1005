@@ -22,9 +22,9 @@ class Auto:
          self.motor = Motor
          self.registro = registro
         
-    def cantidadAsientos(self, asientos):
+    def cantidadAsientos(self):
         cantidad = 0
-        for a in asientos:
+        for a in self.asientos:
              if isinstance(a, Asiento):
                   cantidad = cantidad + 1
         return cantidad
